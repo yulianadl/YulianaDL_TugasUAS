@@ -34,26 +34,26 @@ public class UAS extends javax.swing.JFrame {
         jRadioButton1 = new javax.swing.JRadioButton();
         jRadioButton2 = new javax.swing.JRadioButton();
         jRadioButton3 = new javax.swing.JRadioButton();
-        jTextField1 = new javax.swing.JTextField();
-        jTextField2 = new javax.swing.JTextField();
-        jTextField3 = new javax.swing.JTextField();
-        jTextField4 = new javax.swing.JTextField();
-        jTextField5 = new javax.swing.JTextField();
-        jTextField6 = new javax.swing.JTextField();
-        jTextField7 = new javax.swing.JTextField();
-        jTextField8 = new javax.swing.JTextField();
-        jTextField9 = new javax.swing.JTextField();
-        jTextField10 = new javax.swing.JTextField();
-        jTextField11 = new javax.swing.JTextField();
-        jTextField12 = new javax.swing.JTextField();
-        jTextField13 = new javax.swing.JTextField();
-        jTextField14 = new javax.swing.JTextField();
-        jTextField15 = new javax.swing.JTextField();
+        hargabarang1 = new javax.swing.JTextField();
+        hargabarang2 = new javax.swing.JTextField();
+        hargabarang3 = new javax.swing.JTextField();
+        jumlahbarang1 = new javax.swing.JTextField();
+        jumlahbarang2 = new javax.swing.JTextField();
+        jumlahbarang3 = new javax.swing.JTextField();
+        hargabarangdiskon1 = new javax.swing.JTextField();
+        hargabarangdiskon2 = new javax.swing.JTextField();
+        hargabarangdiskon3 = new javax.swing.JTextField();
+        totalharga1 = new javax.swing.JTextField();
+        totalharga2 = new javax.swing.JTextField();
+        totalharga3 = new javax.swing.JTextField();
+        totalpembayaran = new javax.swing.JTextField();
+        dis5 = new javax.swing.JTextField();
+        psd = new javax.swing.JTextField();
         jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
         jTextField16 = new javax.swing.JTextField();
-        jTextField17 = new javax.swing.JTextField();
+        hargabayar = new javax.swing.JTextField();
         jTextField18 = new javax.swing.JTextField();
         jLabel9 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
@@ -84,29 +84,35 @@ public class UAS extends javax.swing.JFrame {
 
         jRadioButton3.setText("Barang 3");
 
-        jTextField1.setBackground(new java.awt.Color(204, 204, 255));
+        hargabarang1.setBackground(new java.awt.Color(204, 204, 255));
 
-        jTextField2.setBackground(new java.awt.Color(204, 204, 255));
+        hargabarang2.setBackground(new java.awt.Color(204, 204, 255));
 
-        jTextField3.setBackground(new java.awt.Color(204, 204, 255));
+        hargabarang3.setBackground(new java.awt.Color(204, 204, 255));
 
-        jTextField7.setBackground(new java.awt.Color(204, 204, 255));
+        jumlahbarang1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jumlahbarang1ActionPerformed(evt);
+            }
+        });
 
-        jTextField8.setBackground(new java.awt.Color(204, 204, 255));
+        hargabarangdiskon1.setBackground(new java.awt.Color(204, 204, 255));
 
-        jTextField9.setBackground(new java.awt.Color(204, 204, 255));
+        hargabarangdiskon2.setBackground(new java.awt.Color(204, 204, 255));
 
-        jTextField10.setBackground(new java.awt.Color(204, 204, 255));
+        hargabarangdiskon3.setBackground(new java.awt.Color(204, 204, 255));
 
-        jTextField11.setBackground(new java.awt.Color(204, 204, 255));
+        totalharga1.setBackground(new java.awt.Color(204, 204, 255));
 
-        jTextField12.setBackground(new java.awt.Color(204, 204, 255));
+        totalharga2.setBackground(new java.awt.Color(204, 204, 255));
 
-        jTextField13.setBackground(new java.awt.Color(204, 204, 255));
+        totalharga3.setBackground(new java.awt.Color(204, 204, 255));
 
-        jTextField14.setBackground(new java.awt.Color(204, 204, 255));
+        totalpembayaran.setBackground(new java.awt.Color(204, 204, 255));
 
-        jTextField15.setBackground(new java.awt.Color(204, 204, 255));
+        dis5.setBackground(new java.awt.Color(204, 204, 255));
+
+        psd.setBackground(new java.awt.Color(204, 204, 255));
 
         jLabel6.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel6.setText("Total Pembayaran");
@@ -119,6 +125,11 @@ public class UAS extends javax.swing.JFrame {
 
         jTextField16.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jTextField16.setText("Total");
+        jTextField16.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField16ActionPerformed(evt);
+            }
+        });
 
         jTextField18.setBackground(new java.awt.Color(204, 204, 255));
 
@@ -166,26 +177,26 @@ public class UAS extends javax.swing.JFrame {
                                                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                                            .addComponent(jTextField2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 121, Short.MAX_VALUE)
-                                                            .addComponent(jTextField1, javax.swing.GroupLayout.Alignment.TRAILING)))))
+                                                            .addComponent(hargabarang2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 121, Short.MAX_VALUE)
+                                                            .addComponent(hargabarang1, javax.swing.GroupLayout.Alignment.TRAILING)))))
                                             .addGroup(layout.createSequentialGroup()
                                                 .addComponent(jRadioButton3)
                                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                                .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, 121, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                                .addComponent(hargabarang3, javax.swing.GroupLayout.PREFERRED_SIZE, 121, javax.swing.GroupLayout.PREFERRED_SIZE)))
                                         .addGap(18, 18, 18)
                                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(jTextField4)
-                                            .addComponent(jTextField5, javax.swing.GroupLayout.DEFAULT_SIZE, 113, Short.MAX_VALUE)
-                                            .addComponent(jTextField6)))
+                                            .addComponent(jumlahbarang1)
+                                            .addComponent(jumlahbarang2, javax.swing.GroupLayout.DEFAULT_SIZE, 113, Short.MAX_VALUE)
+                                            .addComponent(jumlahbarang3)))
                                     .addGroup(layout.createSequentialGroup()
                                         .addGap(0, 0, Short.MAX_VALUE)
                                         .addComponent(jLabel3)))
                                 .addGap(18, 18, 18)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                     .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(jTextField7)
-                                    .addComponent(jTextField8)
-                                    .addComponent(jTextField9)))
+                                    .addComponent(hargabarangdiskon1)
+                                    .addComponent(hargabarangdiskon2)
+                                    .addComponent(hargabarangdiskon3)))
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -194,20 +205,20 @@ public class UAS extends javax.swing.JFrame {
                                     .addComponent(jLabel7, javax.swing.GroupLayout.Alignment.TRAILING))))
                         .addGap(18, 18, 18)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jTextField15, javax.swing.GroupLayout.DEFAULT_SIZE, 103, Short.MAX_VALUE)
-                            .addComponent(jTextField14)
-                            .addComponent(jTextField13)
+                            .addComponent(psd, javax.swing.GroupLayout.DEFAULT_SIZE, 103, Short.MAX_VALUE)
+                            .addComponent(dis5)
+                            .addComponent(totalpembayaran)
                             .addComponent(jLabel5)
-                            .addComponent(jTextField10)
-                            .addComponent(jTextField11)
-                            .addComponent(jTextField12)))
+                            .addComponent(totalharga1)
+                            .addComponent(totalharga2)
+                            .addComponent(totalharga3)))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addGap(0, 0, Short.MAX_VALUE)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                                 .addComponent(jLabel9)
                                 .addGap(18, 18, 18)
-                                .addComponent(jTextField17, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(hargabayar, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addComponent(jTextField16, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addGap(21, 21, 21)
@@ -239,51 +250,51 @@ public class UAS extends javax.swing.JFrame {
                             .addComponent(jLabel5))
                         .addGap(18, 18, 18)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(hargabarang1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jRadioButton1)
-                            .addComponent(jTextField7, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jTextField10, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jTextField4))
+                            .addComponent(hargabarangdiskon1, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(totalharga1, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jumlahbarang1))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                        .addComponent(jTextField11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addComponent(jTextField8, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addComponent(totalharga2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(hargabarangdiskon2, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(jumlahbarang2, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE))
                                     .addGroup(layout.createSequentialGroup()
                                         .addGap(1, 1, 1)
-                                        .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                        .addComponent(hargabarang2, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)))
                                 .addGap(18, 18, 18)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                        .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(hargabarang3, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addComponent(jRadioButton3)
-                                        .addComponent(jTextField6, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addComponent(jumlahbarang3, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE))
                                     .addGroup(layout.createSequentialGroup()
-                                        .addComponent(jTextField9, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(hargabarangdiskon3, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addGap(2, 2, 2))
-                                    .addComponent(jTextField12)))
+                                    .addComponent(totalharga3)))
                             .addComponent(jRadioButton2)))
                     .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jLabel6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jTextField13))
+                    .addComponent(totalpembayaran))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(dis5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jTextField15)
+                    .addComponent(psd)
                     .addComponent(jLabel8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGap(18, 18, 18)
                 .addComponent(jTextField16, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField17, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(hargabayar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -299,6 +310,36 @@ public class UAS extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jTextField16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField16ActionPerformed
+        // TODO add your handling code here:
+       
+           try {
+               double jb1 = 0, jb2 = 0,jb3=3, bayar = 0, vhb1 = 25000, vhb2 = 50000, vhb3 = 75000, diskon1persen = 0.01, hargaDiskon1Persen, hargaTotal ;
+     
+                 jb1 = Double.parseDouble(jumlahbarang1.getText());
+              jb2 = Double.parseDouble(jumlahbarang2.getText()); 
+              jb3 = Double.parseDouble(jumlahbarang3.getText());
+              bayar = Double.parseDouble(hargabayar.getText());
+        
+      
+        
+        if (jb1>50){
+            totalharga1 = hargabarang1 * jumlahbarang1 - diskon1persen;
+            hargaDiskon1Persen = vhb1 * diskon1persen;
+            totalharga1.setText(String.volue0f(hargaTotal));
+        }else {
+            hargaTotal = vhb1 * jh1;
+            tfth1.setText(String.value0f(hargaTotal));
+        }
+        }catch(Exception err){
+//            showMessageDialog(parentComponent: null, message: "This is even shorter");
+        }
+    }//GEN-LAST:event_jTextField16ActionPerformed
+
+    private void jumlahbarang1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jumlahbarang1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jumlahbarang1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -336,6 +377,14 @@ public class UAS extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JTextField dis5;
+    private javax.swing.JTextField hargabarang1;
+    private javax.swing.JTextField hargabarang2;
+    private javax.swing.JTextField hargabarang3;
+    private javax.swing.JTextField hargabarangdiskon1;
+    private javax.swing.JTextField hargabarangdiskon2;
+    private javax.swing.JTextField hargabarangdiskon3;
+    private javax.swing.JTextField hargabayar;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel2;
@@ -349,26 +398,18 @@ public class UAS extends javax.swing.JFrame {
     private javax.swing.JRadioButton jRadioButton1;
     private javax.swing.JRadioButton jRadioButton2;
     private javax.swing.JRadioButton jRadioButton3;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField10;
-    private javax.swing.JTextField jTextField11;
-    private javax.swing.JTextField jTextField12;
-    private javax.swing.JTextField jTextField13;
-    private javax.swing.JTextField jTextField14;
-    private javax.swing.JTextField jTextField15;
     private javax.swing.JTextField jTextField16;
-    private javax.swing.JTextField jTextField17;
     private javax.swing.JTextField jTextField18;
     private javax.swing.JTextField jTextField19;
-    private javax.swing.JTextField jTextField2;
     private javax.swing.JTextField jTextField20;
     private javax.swing.JTextField jTextField21;
-    private javax.swing.JTextField jTextField3;
-    private javax.swing.JTextField jTextField4;
-    private javax.swing.JTextField jTextField5;
-    private javax.swing.JTextField jTextField6;
-    private javax.swing.JTextField jTextField7;
-    private javax.swing.JTextField jTextField8;
-    private javax.swing.JTextField jTextField9;
+    private javax.swing.JTextField jumlahbarang1;
+    private javax.swing.JTextField jumlahbarang2;
+    private javax.swing.JTextField jumlahbarang3;
+    private javax.swing.JTextField psd;
+    private javax.swing.JTextField totalharga1;
+    private javax.swing.JTextField totalharga2;
+    private javax.swing.JTextField totalharga3;
+    private javax.swing.JTextField totalpembayaran;
     // End of variables declaration//GEN-END:variables
 }
